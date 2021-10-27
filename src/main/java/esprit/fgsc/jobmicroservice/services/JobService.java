@@ -21,10 +21,9 @@ public class JobService {
 		 return jobRepository.findAll();
 	}
 	
-	public String deleteJob(String id) {   
+	public void deleteJob(String id) {   
 
 		jobRepository.deleteById(id);
-   	return "Job deleted";
 	}
           
 public Job updateJob(String id,Job newJob) {
