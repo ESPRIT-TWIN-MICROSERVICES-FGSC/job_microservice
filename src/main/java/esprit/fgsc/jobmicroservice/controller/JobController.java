@@ -40,8 +40,8 @@ public class JobController {
 	}
 	
 	@DeleteMapping("/delete/{id}")
-	public String deleteJob(@PathVariable String id) {
-	    return jobService.deleteJob(id.toString());
+	public void deleteJob(@PathVariable String id) {
+	     jobService.deleteJob(id);
 	}
 
 	@PutMapping("/update/{id}")
